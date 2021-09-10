@@ -1,0 +1,13 @@
+body{
+    background-color: #eee;
+}
+
+/*para usar gradientes de colores se debe usar background-image*/
+.fondo{
+    background-image: linear-gradient(0deg, rgba(255,0,0,0.2) 10%,tomato 20%); /*para partir desde una gradiente*/
+    /*direccion, primero color y segundo color*/
+    /*si no se coloca la direccion, se toma el primer color como arriba y el segundo color abajo*/
+    /*la direccion puede ser to top, to right, to lef, to botton, o combinaciones, to bottom right*/
+    /*se pueden colocar por grados la direccion: -90deg, -45deg etc*/
+    /*los porcentajes entre colores son para hacer repeticiones*/
+}

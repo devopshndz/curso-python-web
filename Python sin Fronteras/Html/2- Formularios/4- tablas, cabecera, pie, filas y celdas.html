@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas, cabecera, pie, filas y celdas</title>
+</head>
+<body>
+    <!--Las tablas-->
+    <table><!--etiqueta de tabla-->
+        <!--una tabla esta dividida en 3 partes, cabecera, contenido y pie(thead, tbody, tfoot)-->
+        <thead><!--etiqueta de cabecera en las tablas-->
+            <tr><!--etiqueta <tr> sirve para indicar cuantas filas (verticar) va a tener la tabla-->
+                <th>Mes</th><!--etiqueta <th> nos indica el contenido que va a tener las filas-->
+                <th>Año</th>
+                <th>Ahorros</th>
+            </tr>
+            <tbody><!--etiqueta <tbody> para mostrar el contenido de la tabla-->
+                <tr><!--tr tambien se utiliza dentro del tbody y en el tfoot-->
+                    <td>Febrero</td><!-- etiqueta <td> para colocar el contenido que va a tener las filas, <td> se utiliza tanto en tbody como en tfoot-->
+                    <td>2021</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>Marzo</td>
+                    <td>2021</td>
+                    <td>$10000</td>
+                </tr>
+            </tbody>
+            <tfoot><!--pie de la tabla-->
+                <tr>
+                    <td>Suma</td>
+                    <td></td>
+                    <td>$11000</td>
+                </tr>
+            </tfoot>
+            
+        </thead>
+    </table>
+</body>
+</html>

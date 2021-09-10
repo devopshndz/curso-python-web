@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios e Inputs</title>
+</head>
+
+<body>
+    <form action="">
+        <!--Etiqueta para crear formularios-->
+        <!--action="" es donde colocamos la ruta a la cual queremos que los datos vayan a parar-->
+        <input /><br />
+        <!--etiqueta input para crear cuadros de interaccion, pueden ser de texto, numericos, de contraseña, etc-->
+        <input type="number" name="" id="" placeholder="escriba numeros" /><br />
+        <!--input de numeros, solo se podrá escribri numeros dentro de el-->
+        <input type="password" name="" id="" placeholder="escriba la contraseña" /><br />
+        <!--input de contraseña, todos los valores que escribamos dentro de el tomará el formato de contraseña-->
+        <input type="text" name="" id="" placeholder="escriba un texto" /><br />
+        <!--input de text que todo lo que entre en el será de tipo string, está por defecto-->
+        <input type="submit" value="Botón de formulario" /><br />
+        <!--input de submit, se utilizará como un boton en html.-->
+        <input type="button" value="Botoncito normal" /><br />
+        <!--que se usa para crear un botón en el que se puede hacer click sin ningún valor por defecto, es decir, no tiene un comportamiento predeterminado-->
+        <!--hay que tener en cuenta que aunque sean botones, se utilizan de difernetes maneras, submit hace referencia a enviar, desencadena
+            un evento directamente con el formularios, mientras que button es un boton que no tiene interaccion con el formulario aún, todo 
+            porque button no tiene un comportamiento predeterminado predeterminado-->
+        <input type="email" name="" id="" placeholder="escriba email" /><br /><br />
+        <!--Hay muchos tipos de input, cada tipo va en la propiedad type="___"-->
+        <!--las propiedades name="" e id="" se utilizaran para js-->
+        <!--la propiedad placeholder="" hara que el texto que se escriba en su interior se vea reflejado como un pequeño aviso 
+            en el input al que pertenece y así el usuario tener una ayuda visual-->
+        <textarea name="" id="" cols="30" rows="10"></textarea><br />
+        <!--textarea creará un cuadro de texto en html que se podra redimensionar 
+            desde web y en el cual el usuario podra escribir en su interior. cols y rowa son sus dimenciones-->
+        <button>Aceptar</button><br />
+        <!--la etiqueta de button tiene el mismo comportamiento de la etiqueta input type="submit"-->
+        <select name="" id="">
+            <!--la etiqueta select se utiliza para mostrar opciones las cuales podremos seleccionar-->
+            <option value="">Seleccione</option>
+            <!--etiqueta option va dentro de la etiquet select, aquí estarán las opciones a seleccionar-->
+            <option value="auron">Auron</option>
+            <option value="perxas">Perxas</option>
+            <option value="axo">Axozer</option>
+            <option value="dj">DJMariio</option>
+            <option value="viole">VioletaG</option>
+            <option value="pato">Pato</option>
+            <option value="pol">Policarpio</option>
+            <!--debemos indicar el valor de cada option en minusculas, cuando en la web seleccionemos una de las opciones, 
+                al servidorserá enviado el valor (value) de esta-->
+        </select>
+    </form>
+    <br />
+    <form action="">
+        <fieldset>
+            <!--la etiqueta de fieldset hara que el formulario tenga forma (agrupara todas las etiquetas) crea un recuadro en donde estará toda la informacion que vayamos a utilizar-->
+            <legend>Formulario de usuario</legend>
+            <!--la etiqueta legend hará una leyenda en la cabezera del recuadro creado por fieldset-->
+
+            <!--primera forma de escribir label-->
+            <label for="edad">Edad</label>
+            <!--la etiqueta label lo que hace es poder escribir una referencia de texto antes o despues de un input o boton-->
+            <input type="number" name="" id="edad" /><br />
+            <!--en este ejemplo estamos asociando el label edad con este input number-->
+            <!--para tener en cuenta: en el imput hay propiedades como name y id, estas propiedades se utilizan para enlazar elementos
+        de js o node js, pero tambien para enlazar aqui en html, si en la propiedad id escribimos por ejemplo edad, en label 
+        podemos escribir en la propiedad for="edad" haciendo referencia al id del input, esto hará que cuando en la web toquemos
+        la palabra edad, se seleccione automaticamente el campo a la cual esta hace referencia y en donde vamos a escribir o a 
+        ejecutar una accion.-->
+            <!--segunda forma de escribir label:-->
+            <label for="pass">Contraseña
+                <input type="password" name="" id="pass" placeholder="password" /> </label><br />
+            <label for="nombre">Nombre
+                <input type="text" name="" id="nombre" placeholder="nombre" />
+            </label>
+        </fieldset>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+/*Selectores. Se utilizan para seleccionar etiquetas de html. Tienen el mismo nombre que la etiqueta de html*/
+body{
+    background-color: #efefef;/*propiedad para dar color de fondo, se escribe el color en formato hexagesimal #fff000 es amarillo*/
+    color: black;/*propiedad de color para texto*/
+}
+/*Todas las propiedades que utilizemos en css deben tener : para colocar su atributo y siempre se debe escribir ; para terminar*/
+/*selectores de id y class.
+- id nos va a ayudar cuando queremos entregarle un identificador unico a un elemento de html. 
+- class lo vamos a utilizar cuando queremos hacer una composicion de estilos sobre un elemento html o cuando queremos compartir este
+estilo a lo largo de varios elementos de html.*/
+
+#parrafo { /*selector para afectar a un id, siempre se coloca la almohadilla # y el nombre del id de html*/
+    color:aqua;
+}
+
+.spancito{ /*selector para afectar a un class, siempre se coloca el punto . y el nombre del id de html*/
+    color:green;
+}
+
+/*Muy pocas veces se utilizan los id ya que estos son para una sola etiqueta, en cambio si se utiliza mucho class ya que van a 
+haber muchas etiquetas que serán afectadas por class*/

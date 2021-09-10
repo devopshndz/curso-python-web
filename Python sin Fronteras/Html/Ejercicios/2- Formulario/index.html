@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <p>Por favor llena este formulario para ponerte en contacto con nosotros.</p>
+    <form action="contacto.html"><!--el action="" es la ruta a donde queremos los datos se vayan-->
+        <fieldset>
+            <legend>Datos de contacto</legend>
+            <label for="nombre">Nombre
+                <input type="text" name="nombre" id="nombre" placeholder="Escriba el nombre">
+            </label>
+            <label for="apellido">Apellido
+                <input type="text" name="apellido" id="apellido" placeholder="Escriba el apellido">
+            </label>
+            <br><label for="correo">Correo
+                <input type="email" name="correo" id="correo" placeholder="Escriba el correo">
+            </label>
+            <br><label for="contraseña">Contraseña
+                <input type="password" name="pass" id="contraseña" placeholder="Digite la contraseña">
+            </label>
+            <br><label for="texto_user">Comentarios
+                <textarea name="texto_usuario" id="texto_user" cols="20" rows="5"></textarea>
+            </label>
+            <input type="submit" value="aceptar">
+        </fieldset>
+    </form>
+</body>
+</html>

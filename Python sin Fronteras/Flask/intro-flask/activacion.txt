@@ -1,0 +1,18 @@
+- activar flask: donde se encuentre instalado ya:
+. venv/bin/activate
+
+*** IMPORTANTE ***
+AL ACTIVAR FLASK POR DEFECTO ESTE ACTIVA EL MODO DE PRODUCCION, EXISTEN SOLO 2 MODOS, PRODUCTION Y DEVELPMENT, PRODUCTION PARA CUANDO EL PRODUCTO YA ESTÁ FINALIZADO Y DEVELOPMENT PARA IR DESARROLLANDOLO:
+(venv)$ export FLASK_ENV=development
+(venv)$ export FLASK_ENV=production
+
+para salir de cualquiera de los dos modos ctrl + c
+
+- para EXPORTAR y EJECUTAR una app de flask:
+(venv)$ export FLASK_APP=nombre_del_archivo.py
+(venv)$ flask run
+
+aparecerá la app corriendo y nos mostrará en que modo lo estamos corriendo y una ip la cual al darle ctrl + clic nos envia al servidor de flask con la app corriendo.
+
+en modo de desarrollo nos va a permitir ver todas las rutas que tengamos en la app pero en modo de produccion solo la que le indiquemos como raiz
+ 

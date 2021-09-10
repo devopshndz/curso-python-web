@@ -1,0 +1,46 @@
+body {
+    background-color: #eee;
+}
+
+.texto {
+    color: #222fff;
+    text-align: justify; /*alinear el texto, right, left y center, se utiliza la propiedad justify para justificar texto*/
+    text-decoration: underline;
+    text-indent: 15px; /*text-indent para identar el texto (se corre a la derecha)*/
+    line-height: 1.7; /*line-height determina la altura del texto, como un interlineado*/
+    word-spacing: 10px; /*word-spacing agg una pequeña separación en el texto entre palabras.*/
+    text-shadow: 1px 2px 2px rgba(111, 121, 23, 0.3); /*text-shadow agg sombras al texto*/
+    /* todo en pixeles:
+    1. que tanto se desplaza el texto hacia la derecha.
+    2. que tanto se desplaza el texto hacia abajo.
+    3. qie tanto se difumina el texto.*/
+    font-weight: 900; /*font-weight peso de la fuente*/
+    font-family: arial; /*font-family nos modifica el la fuente de escritura*/
+    font-style: italic; /*font-style estilo del texto*/
+    font-size: 1em; /*font-size tamañano del texto, por lo general se colova en px. 
+    em es la unidad que tiene configurado el navegaro web para utilizarlo en el tamaño de la fuente
+    muchos desarrolladores prefieren utilizar em que px*/
+}
+
+/*agg decoracion al texto*/
+a{
+    text-decoration: underline; /*con none lo que hacemos es quitar el subrallado del texto*/
+    text-transform: capitalize; /*text-transform nos sirve para cambiar la forma de nuestro texto*/
+    letter-spacing: 3px; /*letter-spacing da espacio entre letras al texto*/
+    
+}
+/*propiedades a usar en text-decoration:
+- overline: coloca una linea arriba del texto en vez de abajo
+- line-through: coloca una linea justo en la mitad del texto
+- underline: coloca la linea debajo del texto*/
+
+/*Propiedades de text-transform:
+- uppercase: texto en mayuscula.
+- lowercase: texto en minuscula.
+- capitalize: la primera con mayuscula*/
+
+/*propiedades de font-style:
+- italic: cursiva
+- normal: normal
+- oblicua: cursiva*/
+

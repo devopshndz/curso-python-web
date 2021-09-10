@@ -1,0 +1,12 @@
+#!/bin/sh
+'''exec' "/media/acertijo138/59ee4347-d673-47fb-9366-e90e4c931034/Cursos de Programacion Python y JS y basico de linux/Back/1. Python/Python sin Fronteras/Flask/intro-flask/venv/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from setuptools.command.easy_install import main
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())

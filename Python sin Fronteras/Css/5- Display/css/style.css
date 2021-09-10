@@ -1,0 +1,57 @@
+body {
+  background-color: #eee;
+}
+
+p {
+  display: inline; /*propiedad display para saber visualmente como van los elementos, inline o block*/
+}
+
+span {
+  display: block;
+  max-width: 350px; /*max-whidt para decir cual es el ancho maximo del elemento*/
+  background-color: coral;
+  margin: auto; /*auto es la propiedad de margin que hace que el contenido esté centrado. esto segun lo que requiera la pagina*/
+  position: relative; /*propiedad para colocacion de elementos*/
+  left: 100px;
+  right: 15px;
+  top: 0px;
+  bottom: 0px;
+  /*se utilizan left, right, top y button para ayudar a darle dimensiones al elemento al moverlo*/
+}
+
+#invi {
+  display: none; /*con none volvemos los elementos invisibles*/
+}
+
+/* div{
+    position: fixed; /*fixed: propiedad para dejar contenido fijo en la pantalla idependientemente de cuanto contenido sea*/
+
+#over {
+  width: 100px;
+  height: 100px;
+  overflow: auto; /*overflow para esconder contenido*/
+  /*overflow-y: ; se utiliza para dar propiedad verticalmente*/
+  /*overflow-x: ; se utiliza para dar propiedad horizontalmente
+    ambos de deben de hacer sin que overflow solo esté en funcionamiento.*/
+}
+
+/*Propiedades de overflow:
+- visible, el por defecto.
+- hidden: todo el contenido que no se alcance a mostrar, va a quedar oculto
+- scroll: hace que el contenido pueda tener una barra de scroll tanto verticar como horizontal
+- auto: le agregar tambien el scroll solo si es necesario*/
+
+/*float es para hacer que un elemento flote a la derecha o izquierda.*/
+img:hover {
+  float: left; /*con float los elementos "flotaran a donde se les indique, los elementos siguientes 
+  se colocaran al lado de estos, en este caso, la imagen flotará a la izquierda, todos los elementos
+  que vengan despues de esta imagen, iran a la derecha de esta. no debajo"*/
+  /*pueden ser tanto a la derecha o la izquierda.*/
+  opacity: 0.5; /*que transparente queremos que sea un elemento en html*/
+  /*va con valores entre 0 y 1, entre mas esté al 0, mas transparente será */
+}
+
+div p{
+    color: red;
+}
+

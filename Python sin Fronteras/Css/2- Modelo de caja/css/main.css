@@ -1,0 +1,40 @@
+/*modelo de la caja: margin, border, padding en ese orden*/
+/*En este archivo vamos a ver las propiedades de margin, padding, border*/
+
+body{
+    background-color: grey;
+}
+
+.caja{
+    margin: 8px; /*margin es la propiedad para modificar margenes al contenido, va a ser un borde invisible que va a estar bordando el contenido por fuera*/
+    border-style: solid; /*border es la propiedad para modificar el borde de los elementos.
+                            border-style es estilo de borde: solid es solito, mostrará el borde*/
+    border-width: 8px; /*ancho de borde*/
+    border-color: darkcyan; /*Color de borde*/
+    border-top: 6px solid green; /*borde superior*/
+    border-right: 6px double blue; /*borde derecho*/
+    border-left: 6px dotted red; /*borde izquierdo*/
+    border-bottom: 8px dashed yellow; /*borde inverior*/
+    padding: 8px; /*padding es la propiedad para modificar el relleno de un elemento, va a ser un borde invisible que va a estar bordando el contenido por dentro*/
+    background-color: aquamarine;
+    border-radius: 10px; /*propiedad para hacer los bordes redondeados.*/
+    height: 100px; /*Altura*/
+    width: 100px; /*Anchura*/
+    color: darkgoldenrod;
+    /*los pixeles px son la unidad de medida que tienen los monitores, cuando colocamos pixeles en margenes
+    se agregan en funcion de la pantalla. los margenes van a aplicar separacion.*/
+}
+
+/*en border-style: existen muchos estilos::after
+: dashed    hace que que el borde sea punteado
+: dotted    borde punteado mas cortitos
+: double    linea dobles
+: groove    un ligero sombreado claro
+: ridge     ligero sombreado claro invertido a groove
+: inset     ligero levantamiento de borde hacia abajo
+: outset    ligero levantamiento de borde hacia arriba
+: none      por defecto
+: hidden    oculto
+: se puede hacer un mix: dotted dashed solid double, cuando utilizamos varios estilos a la vez, estamos 
+indicando a css que cada propiedad es un borde, el primero será el borde superior, el segundo será el 
+borde izquierdo, el tercero el derecho y el cuarto el inferior. Pueden haber combinaciones de 2 a 4 estilos*/

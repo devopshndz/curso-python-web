@@ -1,0 +1,43 @@
+body{
+    background-color: #eee;
+}
+/*lista tipo dropdown*/
+.dropdown-btn{
+    background-color: #4caf50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer; /*propiedad de cursor para darle la propiedad pointer para hacer que sea una manito*/
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px; /*padding vertical (arrina y abajo) y padding horizontal (izq, der)*/
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{ /*todos los links dentor de dropdown-contnet al momento de pasar el mouse por encima agg lo siguiente:*/
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-btn{ /*el boton al pasar por encima del el:*/
+    background-color: #3e8e41;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}

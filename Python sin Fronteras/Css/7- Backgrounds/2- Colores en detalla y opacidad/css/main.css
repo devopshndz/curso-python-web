@@ -1,0 +1,19 @@
+body {
+    background-color: #eee;
+}
+
+.fondo{
+    /*formato rgba:*/
+    /* background-color: rgba(0, 0, 0, 255, 0.3); */
+    /*rojo, verde, azul, opacidad*/
+    /*el ultimo digito va entre 0 y 1, es la opacidad, 0 = transparente, 1 no es transparente*/
+    /*0 es la ausencia de color (negro) y 255 es el maximo tinte a un color (blanco)*/
+    
+    /*formato hsl: */
+    background-color: hsl(120, 60%, 70%);
+    opacity: 0.8; /*la opacidad se la podemos escribir a parte pero afectará a todo el elemento no solo al fondo, hay que tener*/
+    /*hue, saturacion, brillo, alfa u opacidad
+    hue: de 0 a 360, 0 = rojo, 120 = verde, 240= azul
+    saturation: 0% o 100%
+    brillo o lightness: 0% a 100%*/
+}

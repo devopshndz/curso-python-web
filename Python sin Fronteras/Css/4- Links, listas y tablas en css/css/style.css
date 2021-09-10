@@ -1,0 +1,86 @@
+/*Ejemplo de creación de boton en css*/
+
+body{
+    background-color: #eee;
+}
+
+/*Siempre se coloca a:.....*/
+/*Estilos para links normales, estilo genérico*/
+a {
+    color: hotpink;
+    background-color: #f00; /*para darle fondo de color al link*/
+    border: solid 1px #d00 ;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 4px;
+}
+/*Estilos para links cuando no han sido vistados todavía, se debería ver así verde*/
+a:link {
+    color: green;
+    text-decoration: none;
+}
+
+/*Estilos para links cuando ya han sido vistados, se debería ver azul al ya haber sido visitado*/
+a:visited{
+    color: white;
+}
+
+/*Estilos para links cuando colocamos el mouse por encima del link*/
+a:hover {
+    color: white;
+    background-color: #f55;
+}
+
+/*Estilos para links le damos click al link*/
+a:active{
+    color: brown;
+}
+
+ul{
+    list-style-type: none; /*propiedad para cambiar el puntero inicial de una lista*/
+    background-color: #fff;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    padding-left: 0px;
+}
+/*Seleccionar todos los elementos li que se encuentran dentro de ul*/
+ul li{ /*sintaxis para elejir un elemento en concreto, selector padre luego selector hijo*/
+    border-bottom: solid 1px #ddd;
+    padding: 15px;
+}
+/*propiedades de list-style-type:
+- circle: circulo sin relleno.
+- square: cuadrado con relleno.
+- upper-roman: numeros romanods.
+- upper-alpha: letras del abecedario mayusculas.
+- lower-alpha: letras del abecedario minusculas.
+*/
+
+/*Estilos a una tabla*/
+table{
+    width:100%;
+    background-color: white;
+    border-collapse: collapse; /*indica a la tabla que hacer con los bordes, collapse hace que se quiten*/
+}
+
+tr:nth-child(even){ /*tr:nth-child() sirve para seleccionar hijos de selectores dependiendo de...*/
+    background-color: #f2f2f2;
+}
+/*propiedades de nth-child():
+- even: agarra una fila y la oscurece tenuemente mientras la siguente la deja igual, a lo largo de la tabla
+- odd: hace lo inverso a even*/
+
+td{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th{
+    background-color: #4caf50;
+    color: white;
+    text-align: left;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+}

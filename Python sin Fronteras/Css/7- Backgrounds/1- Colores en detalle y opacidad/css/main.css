@@ -1,0 +1,29 @@
+body {
+  background-color: #eee;
+}
+
+.fondo {
+  height: 140px;
+  background-color: #f00; /*color de fondo tanto en hexagecimal como por palabra*/
+  background-image: url("https://placekitten.com/200/139"); /*la imagen será recortada para que tenga el mismo alto que el contenedor*/
+  background-repeat: no-repeat; /*repetir o no repetir una imagen*/
+  background-position: left top; /*indica desde donde se empieza a renderizarce la imagen*/
+  background-attachment: fixed; /*bajando con nosotros a medida que vamos bajando con la rueda del mouse*/
+  /*Especifica si las imágenes de fondo son fijas con respecto a la ventana gráfica ('fija') o se desplazan junto con el elemento ('desplazamiento') o su contenido ('local').*/
+  /*scroll; es el valor por defecto que tiene attachment*/
+  background-size: cover;/*tamaño de foto (cuando estemos construyendo banners o cabeceras de sitios web)*/
+  /*podemos ahorrarnos todo esto escrito es una sola linea con la propiedad backgroun a secas:*/
+
+
+  /* background: green url("https://placekitten.com/200/139") no-repeat left top fixed;
+  backgroun-size: cover; se debe colocar como una propiedad aparte
+  en el mismo orden de arriba */
+}
+/*propiedades de background-repeat:
+- no-repeat: no repite imagen
+- repeat-x: repite en el eje x
+- repeat-y: repite en el eje y*/
+
+/*propiedades de background-position:
+- right, left, top, button para decir desde que parte se renderiza
+- se puede combinar para decir por ejemplo right top: desde la derecha y desde arriba*/
